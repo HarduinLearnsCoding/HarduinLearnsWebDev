@@ -1,0 +1,332 @@
+<!DOCTYPE html >
+<html><head>
+     
+
+     <title>Harduin Weds Blue</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(https://media.giphy.com/media/l1J3DaHzWEp2bTpYs/giphy.gif);}
+        .clear { clear: both; }
+        #page-wrap { width: 1300px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999;color: #e75480 }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; color: #fed8b1 }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0;color: #FFB6C1}
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: white; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 700px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #ffffff; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px;  color: #add8e6 }
+        dd { width: 1100px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+        .tg  {border-collapse:collapse;border-spacing:0;margin-left: auto;
+        margin-right: auto;background-color: rgba(1, 2, 0, 0.993);}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 20px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 20px;word-break:normal;}
+        .tg .tg-ge6c{border-color:#ffcc67;font-weight:bold;text-align:left;vertical-align:top}
+        .tg .tg-vn85{border-color:#ffcc67;text-align:left;vertical-align:top}
+        * {
+      box-sizing: border-box;
+      }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color:firebrick;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+     </style>
+</head>
+<script>var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+  
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+  
+    if (this.isDeleting) { delta /= 2; }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+  
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    
+  };
+  
+  </script>
+<body text="#ffffff">
+
+    <div id="page-wrap">
+    
+        <img src="https://media.giphy.com/media/vTfFCC3rSfKco/giphy.gif" width="450" height="300" alt="Anirudh" id="pic">
+    
+        <div id="contact-info" class="vcard">
+            
+        
+            <h1 class="fn">Harduin  
+                <span
+                   class="txt-rotate"
+                   data-period="2000"
+                   data-rotate='[ "Weds", "Loves", "Marries", "Fancies", "❤" ]'>
+                </span>  <span style="color:rgb(151, 216, 247)">Blue</span></h1>
+        
+           <!-- <p>
+                <u>Cell</u> : <span class="tel"> 9013137732</span><br>
+                <u>Email</u> : <a class="email" href="mailto:anirudhnakra4@gmail.com">anirudhnakra4@gmail.com</a>
+            </p> -->
+        </div>
+               
+                
+        <div id="objective">
+            
+               Harduin is wedding his childhood friend Blue early next year. We hope that the guests would bless us with their esteemed presence.
+               The ceremony would be held in a traditional Naga ceremony with pundits joining us from as far as Antarctica. The penguins themselves
+               would be responsible for the ring bearing ceremony and polar bears will be acting as our waiters. Don't worry, they will be paid minimum
+               wage.
+               <br>
+            
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>The story</dt>
+            <dd> Harduin and Blue met at a preschool when they were just 2 years old. Little did they know that they would be getting 
+                married 22 years later. Harduin grew up to be a Navy Seal that loved Halloween and Blue turned out to be a waitress with
+                a heart of gold. Both of them realised as they grew up that they were more than just best friends and Harduin proposed near
+                a yard sale. Disgusted by the stench of the nearby garbage, Blue rejected Harduin who then proceeded to abduct Blue and locked her
+                in a tower. Then Blue got afflicted by Stockholm syndrome and promised to marry him. What a cute couple!
+                
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Where and When?</dt>
+            <dd>
+                <h2>Date and Time</h2>
+                The ceremony is planned for 4th of January 2021 at 4:30 pm. <br><strong>Anyone who doesnt come on time will be beheaded.</strong><br><br>
+                
+                <h2>Location</h2>
+                The ceremony would be held at the Bran Castle. Please be noted that there will be guests of other races such as Jedis, Borgs, etc. Vampires might seem commonplace. <br><br>
+                <div align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7603746299483!2d25.364975015431895!3d45.51490217910158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b347e5a415de31%3A0xcf922792d921ab7f!2sBran%20Castle!5e0!3m2!1sen!2sin!4v1607936094589!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <br><br></div>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Image gallery</dt>
+            <dd>
+            <img  src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e85f7760114443.5a3c2d3a8f8c9.gif" align="left" width="45%" height= "20%">
+            <img  src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/15cc0360114443.5a3c2d3ad6aa7.gif" align="right" width="55%" height="40%">
+            <img  src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/36444260114443.5a3c2d3ad6ddd.gif" align="left" width="45%" height= "50%">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/83482c60114443.5a3c2d3ad72d5.gif" align="left" width="45%" height= "50%">
+            <img  src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/88b8ab84530653.5d5f920bd20fc.jpg" align="right" width="55%">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e35af384530653.5d5f920c41f5b.jpg" align="left" width="45%" height= "50%">
+            
+            </dd>
+            <dd class="clear"></dd><br>
+
+	    <dt>Activities</dt>
+        <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-ge6c">S No.</th>
+                <th class="tg-ge6c">Event </th>
+                <th class="tg-ge6c">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-vn85">1</td>
+                <td class="tg-vn85">Tea</td>
+                <td class="tg-vn85">5:00pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">2</td>
+                <td class="tg-vn85">Musical Chairs</td>
+                <td class="tg-vn85">5:45 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">3</td>
+                <td class="tg-vn85">Blood feast</td>
+                <td class="tg-vn85">6:30 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">4</td>
+                <td class="tg-vn85">Wine tasting</td>
+                <td class="tg-vn85">7:00 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">5</td>
+                <td class="tg-vn85">Ring Ceremony</td>
+                <td class="tg-vn85">8:00 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">6</td>
+                <td class="tg-vn85">Dinner</td>
+                <td class="tg-vn85">8:30 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">7</td>
+                <td class="tg-vn85">Gift Ceremony</td>
+                <td class="tg-vn85">9:15 pm</td>
+              </tr>
+              <tr>
+                <td class="tg-vn85">8</td>
+                <td class="tg-vn85">Family Photograph</td>
+                <td class="tg-vn85">9:45 pm</td>
+              </tr>
+            </tbody>
+            </table><br><br>
+        </dl>
+        <div class="container">
+            <form>
+                <h1>RSVP FORM</h1>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname"> Your full name </label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="partysize">Number of Guests</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="partysize" name="partysize" placeholder="Party Size">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="join">Will you be joining the celebration?</label>
+              </div>
+              <div class="col-75">
+                <select id="join" name="join">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Absss">Am i crazy?</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Message for the bride and groom</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="A beautiful message for the married couple to be" style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
+        <div class="clear"></div><br>
+        
+     <p align="center">
+              <b><u>Cell phone number that I will never pick up</u></b> : <span class="tel" style="color:white">+91-9013137732</span><br>
+               <b><u>Email ID that I wont respond with </u></b> : <a class="email" href="mailto:anirudhnakra4@gmail.com">anirudhnakra4@gmail.com</a>
+            </p>
+    </div>
+
+
+
+</body></html>
